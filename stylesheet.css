@@ -1,0 +1,111 @@
+/* global styles */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Chakra+Petch:wght@300&family=Kumbh+Sans:wght@100&family=Noto+Sans+Mono&family=Zen+Loop&display=swap');
+
+* {
+    /* font-family: 'Bungee', cursive;
+    font-family: 'Chakra Petch', sans-serif;
+    font-family: 'Kumbh Sans', sans-serif; */
+    font-family: 'Noto Sans Mono', monospace;
+    padding: 1rem;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.rotated{
+    transform: rotate(15deg);
+}
+/* nav styles */
+
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: linear-gradient(15deg, rgb(156, 44, 119)50%, rgb(205, 16, 77) 50%);
+    /* background-color: rgb(156, 44, 119); */
+    align-items: center;
+    box-shadow: 0px 0px 15px rgb(151, 151, 151);
+    border-radius: 2rem;
+}
+
+.nav-links-container{
+    text-align: right;
+}
+
+.nav-links-container > li > a{
+    font-size: larger;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-links-container > li > a:hover{
+    color: black;
+}
+
+/* sections */
+
+.section{
+    border-radius: 2rem;
+    box-shadow: 0px 0px 15px rgb(151, 151, 151);
+}
+
+.home-section-container{
+    height: 95vh;
+    max-width: 1200px;
+    /* background-color: rgb(225, 77, 42); */
+    background: linear-gradient(-15deg, rgba(225, 77, 42, 0.4)50%, rgb(156, 44, 119,0.4)50%),url("https://cdn.pixabay.com/photo/2022/09/18/15/37/elephants-7463340_1280.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.footer-section-contact{
+    justify-content: space-between;
+    background-color: rgb(253, 132, 31);
+    background: linear-gradient(35deg, rgb(253, 132, 31)25%, #E14D2A 25% 50%, #CD104D 50% 75%, #9C2C77 75% 100%)
+}
+
+.footer-section-contact > a{
+    transition: all 0.3s ease-in-out;
+}
+
+.footer-section-contact > a:hover{
+    color: black;
+}
+
+
+@media (max-width:400px) {
+    .nav-container{
+        justify-content: center;
+    }
+    .nav-links-container{
+        text-align: center;
+    }
+}
+
+
+@media (max-width:800px) {
+    .rotated{
+        transform: rotate(0deg);
+    }
+    .footer-section-contact{
+        justify-content: center;
+    }
+    
+}
