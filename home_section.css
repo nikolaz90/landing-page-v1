@@ -8,7 +8,6 @@
 .home-section-container{
     height: 95vh;
     max-width: 1200px;
-    /* background-color: rgb(225, 77, 42); */
     background: linear-gradient(-15deg, rgba(225, 77, 42, 0.4)50%, rgb(156, 44, 119,0.4)50%),url("https://cdn.pixabay.com/photo/2022/09/18/15/37/elephants-7463340_1280.jpg");
     background-size: cover;
     background-position: center;
