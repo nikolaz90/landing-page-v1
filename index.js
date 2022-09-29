@@ -12,3 +12,22 @@ bg.addEventListener('mousemove', ()=>{
     bg.style.backgroundSize = 'cover'
     bg.style.backgroundPosition = 'center'
 })
+
+
+
+
+
+const container = document.getElementById("about")
+
+let pixelCount = 15
+let scrollAmount = 0
+
+document.addEventListener('scroll', ()=>{
+    if(scrollAmount < window.pageYOffset && pixelCount<= 25){
+        pixelCount +=1
+    }else if(scrollAmount > window.pageYOffset && pixelCount>=15){
+         pixelCount -=1
+    }
+    container.style.boxShadow = `0px 0px ${pixelCount}px black`
+        scrollAmount = window.pageYOffset
+    })   
