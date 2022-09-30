@@ -13,10 +13,6 @@ bg.addEventListener('mousemove', ()=>{
     bg.style.backgroundPosition = 'center'
 })
 
-
-
-
-
 const container = document.getElementById("about")
 
 let pixelCount = 15
